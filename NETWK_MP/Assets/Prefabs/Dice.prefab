@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2800556686479628607}
   - component: {fileID: 2800556686479628605}
   - component: {fileID: 2800556686479628604}
+  - component: {fileID: 897884752555064846}
   m_Layer: 0
   m_Name: Dice
   m_TagString: Untagged
@@ -131,3 +132,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6c030b384c6820b43a740b61d8aa8901, type: 3}
   - {fileID: 21300000, guid: 74b6d0e6a04915c4890d25fcd1ea03ca, type: 3}
   - {fileID: 21300000, guid: 326ac33e43292944fb66a3f7f4840249, type: 3}
+--- !u!114 &897884752555064846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2800556686479628600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  visible: 2
+  m_AssetId: bc23edda6a0c9f24599401d1c67aa240
+  hasSpawned: 0

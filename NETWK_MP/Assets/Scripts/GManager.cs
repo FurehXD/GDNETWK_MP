@@ -7,7 +7,7 @@ public class GManager : MonoBehaviour
 {
     private static GameObject winnerTextShadow, player1MoveText, player2MoveText;
 
-    private static GameObject player1, player2;
+    private static GameObject player1, player2, wpObject;
 
     public static int diceSideThrown = 0;
     public static int player1StartWayPoint = 0;
@@ -25,13 +25,23 @@ public class GManager : MonoBehaviour
 
         player1 = GameObject.Find("Player1");
         player2 = GameObject.Find("Player2");
+        wpObject = GameObject.Find("BoardWaypoints");
+    
 
         player1.GetComponent<PathFinding>().moveAllowed = false;
         player2.GetComponent<PathFinding>().moveAllowed = false;
+        
 
         winnerTextShadow.gameObject.SetActive(false);
         player1MoveText.gameObject.SetActive(true);
         player2MoveText.gameObject.SetActive(false);
+
+        for(int i = 0; i < 100; i++)
+        {
+            player1.GetComponent<PathFinding>().wayPoints[i] = wpObject.transform.GetChild(i).gameObject.transform;
+            player2.GetComponent<PathFinding>().wayPoints[i] = wpObject.transform.GetChild(i).gameObject.transform;
+        }
+
 
     }
 
